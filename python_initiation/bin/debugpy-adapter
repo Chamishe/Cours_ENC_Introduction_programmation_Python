@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/home/melina/Documents/Chartes/UE 5 - Initiation à la programmation informatique et au développement web/3. Introduction au langaga de programmation Python/Cours_ENC_Introduction_programmation_Python/python_initiation/bin/python" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from debugpy.adapter.__main__ import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())

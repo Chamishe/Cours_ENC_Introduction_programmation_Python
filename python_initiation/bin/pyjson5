@@ -1,0 +1,9 @@
+#!/bin/sh
+'''exec' "/home/melina/Documents/Chartes/UE 5 - Initiation à la programmation informatique et au développement web/3. Introduction au langaga de programmation Python/Cours_ENC_Introduction_programmation_Python/python_initiation/bin/python3" "$0" "$@"
+' '''
+import sys
+from json5.tool import main
+if __name__ == '__main__':
+    if sys.argv[0].endswith('.exe'):
+        sys.argv[0] = sys.argv[0][:-4]
+    sys.exit(main())
